@@ -1,9 +1,13 @@
 package com.presa.main;
 
-// An immutable passive data object (PDO) to represent the rating data
+
+/**
+ * An immutable passive data object (PDO) to represent the rating data
+ * @author zenWai
+ */
 public class Rating implements Comparable<Rating> {
-    private String item;
-    private double value;
+    private final String item;
+    private final double value;
 
     public Rating (String anItem, double aValue) {
         item = anItem;
