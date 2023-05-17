@@ -1,0 +1,22 @@
+<project>
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.presa</groupId>
+    <artifactId>RecSystem</artifactId>
+    <version>1.0</version>
+    <properties>
+        <maven.compiler.source>20</maven.compiler.source>
+        <maven.compiler.target>20</maven.compiler.target>
+    </properties>
+    <dependencies>
+        <!-- other dependencies -->
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-csv</artifactId>
+            <version>1.9.0</version>
+        </dependency>
+
+        <!-- other dependencies -->
+    </dependencies>
+</project>
