@@ -5,10 +5,12 @@ import lib.duke.*;
 
 import java.io.IOException;
 import java.util.*;
-
+/**
+ * @author zenWai
+ */
 public class FirstRatings {
     private final String DATAPATH = "data/";
-    public ArrayList<Movie> loadMovies(String filename) throws IOException {
+    public ArrayList<Movie> loadMovies(String filename) {
         FileResource file = new FileResource(DATAPATH+filename);
 
         ArrayList<Movie> movies = new ArrayList<>();
@@ -154,14 +156,14 @@ public class FirstRatings {
         System.out.println("Rater(s) with maximum number of ratings, id(s): " + ratersIds);
     }
 
-    public void printMovieRatingCountFromRaters(ArrayList<Rater> raters, String movieId) {
+    public int getMovieRatingCountFromRaters(ArrayList<Rater> raters, String movieId) {
         int counter = 0;
         for (Rater rater : raters) {
             if (rater.hasRating(movieId)) {
                 counter++;
             }
         }
-        System.out.println("Movie " + movieId + " has " + counter + " ratings.");
+        return counter;
     }
 
     public void printNumberOfRatedMovies(ArrayList<Rater> raters) {
@@ -227,7 +229,9 @@ public class FirstRatings {
         fr.printRatersWithMaxRatings(raters);
         System.out.println();
 
-        fr.printMovieRatingCountFromRaters(raters,"1798709");
+        String MOVIEID = "1798709";
+        int counter = fr.getMovieRatingCountFromRaters(raters, MOVIEID);
+        System.out.println("Movie " + MOVIEID + " has " + counter + " ratings.");
         System.out.println();
 
         fr.printNumberOfRatedMovies(raters);

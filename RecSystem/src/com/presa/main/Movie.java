@@ -1,9 +1,9 @@
 package com.presa.main;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-
-// An immutable passive data object (PDO) to represent item data
+/**
+ * An immutable passive data object (PDO) to represent item data
+ * @author zenWai
+ */
 public class Movie {
     private String id;
     private String title;
