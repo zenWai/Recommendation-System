@@ -6,8 +6,8 @@ package com.presa.main;
  * @author zenWai
  */
 public class Rating implements Comparable<Rating> {
-    private String item;
-    private double value;
+    private final String item;
+    private final double value;
 
     public Rating (String anItem, double aValue) {
         item = anItem;

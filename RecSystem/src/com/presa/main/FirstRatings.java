@@ -217,7 +217,7 @@ public class FirstRatings {
         System.out.println();
 
         //////////////////////////////
-        // RATERS HERE
+        // RATERS
 
         String FILENAMERATERS = "ratings.csv";
         ArrayList<Rater> raters = fr.loadRaters(FILENAMERATERS);

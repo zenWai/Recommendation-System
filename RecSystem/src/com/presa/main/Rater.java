@@ -5,8 +5,8 @@ import java.util.*;
  * @author zenWai
  */
 public class Rater {
-    private String myID;
-    private ArrayList<Rating> myRatings;
+    private final String myID;
+    private final ArrayList<Rating> myRatings;
 
     public Rater(String id) {
         myID = id;

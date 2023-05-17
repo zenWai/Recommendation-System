@@ -11,7 +11,7 @@ public class SecondRatings {
     
     public SecondRatings() {
         // default constructor
-        this("ratedmovies_short.csv", "ratings_short.csv");
+        this("ratedmoviesfull.csv", "ratings.csv");
     }
 
     public SecondRatings(String movieFile, String ratingsFile) {
@@ -28,7 +28,7 @@ public class SecondRatings {
         return myRaters.size();
     }
 
-    public double getAverageByID(String movieId, int minimalRaters) {
+    private double getAverageByID(String movieId, int minimalRaters) {
         int howManyRatings =
                 fr.getMovieRatingCountFromRaters(myRaters, movieId);
 
@@ -58,6 +58,23 @@ public class SecondRatings {
             }
         }
         return averageRatings;
+    }
+
+    public String getTitle(String id) {
+        for(Movie m : myMovies) {
+            if(m.getID().equals(id)) {
+                return m.getTitle();
+            }
+        }
+        return "The searched movie id was now found";
+    }
+
+    public String getId(String title) {
+        return myMovies.stream()
+                .filter(m -> m.getTitle().equals(title))
+                .map(Movie::getID)
+                .findFirst()
+                .orElse("Movie " + title + " was not found");
     }
 
 
