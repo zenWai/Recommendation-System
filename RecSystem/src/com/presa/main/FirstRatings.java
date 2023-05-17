@@ -110,7 +110,7 @@ public class FirstRatings {
             );
         }
 
-        return new ArrayList<Rater>(raterMap.values());
+        return new ArrayList<>(raterMap.values());
     }
 
     public void printRatersInfo(ArrayList<Rater> raters) {
@@ -176,7 +176,7 @@ public class FirstRatings {
         System.out.println(raters.size() + " Raters have rated this number of movies: " + movies.size());
     }
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         FirstRatings fr = new FirstRatings();
 
         //////////////////
