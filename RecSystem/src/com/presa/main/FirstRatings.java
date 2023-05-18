@@ -1,9 +1,8 @@
 package com.presa.main;
 
 import lib.csv.CSVRecord;
-import lib.duke.*;
+import lib.duke.FileResource;
 
-import java.io.IOException;
 import java.util.*;
 /**
  * @author zenWai
@@ -100,7 +99,7 @@ public class FirstRatings {
             if (raterMap.containsKey(raterId)) {
                 rater = raterMap.get(raterId);
             } else {
-                rater = new Rater(raterId);
+                rater = new EfficientRater(raterId);
                 raterMap.put(raterId, rater);
             }
 
@@ -221,7 +220,7 @@ public class FirstRatings {
 
         String FILENAMERATERS = "ratings.csv";
         ArrayList<Rater> raters = fr.loadRaters(FILENAMERATERS);
-        //fr.printRatersInfo(raters);
+        fr.printRatersInfo(raters);
 
         fr.printNumRatingsForRater(raters, "193");
         System.out.println();
