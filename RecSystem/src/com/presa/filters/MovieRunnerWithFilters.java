@@ -1,4 +1,8 @@
-package com.presa.main;
+package com.presa.filters;
+
+import com.presa.movie.MovieDatabase;
+import com.presa.rating.Rating;
+import com.presa.rating.ThirdRatings;
 
 import java.util.ArrayList;
 

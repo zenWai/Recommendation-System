@@ -1,4 +1,7 @@
-package com.presa.main;
+package com.presa.movie;
+
+import com.presa.filters.Filter;
+import com.presa.rating.FirstRatings;
 
 import java.util.ArrayList;
 import java.util.HashMap;

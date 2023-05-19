@@ -1,4 +1,4 @@
-package com.presa.main;
+package com.presa.filters;
 
 public interface Filter {
 	boolean satisfies(String id);

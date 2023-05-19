@@ -1,6 +1,8 @@
-package com.presa.main;
+package com.presa.rating;
 
-
+import com.presa.movie.Movie;
+import com.presa.rater.EfficientRater;
+import com.presa.rater.Rater;
 import lib.csv.CSVRecord;
 import lib.duke.FileResource;
 

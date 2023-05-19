@@ -1,4 +1,6 @@
-package com.presa.main;
+package com.presa.rater;
+
+import com.presa.rating.Rating;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -8,7 +10,7 @@ import java.util.HashMap;
  */
 public class EfficientRater implements Rater {
     private final String myID;
-    private final HashMap<String,Rating> myRatings;
+    private final HashMap<String, Rating> myRatings;
 
     public EfficientRater(String id) {
         myID = id;

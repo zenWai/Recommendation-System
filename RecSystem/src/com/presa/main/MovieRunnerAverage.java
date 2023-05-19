@@ -1,5 +1,8 @@
 package com.presa.main;
 
+import com.presa.rating.Rating;
+import com.presa.rating.SecondRatings;
+
 import java.util.ArrayList;
 /**
  * @author zenWai

@@ -1,5 +1,4 @@
-package com.presa.main;
-
+package com.presa.rating;
 
 /**
  * An immutable passive data object (PDO) to represent the rating data

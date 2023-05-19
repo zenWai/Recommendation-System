@@ -1,5 +1,4 @@
-package com.presa.main;
-/**
+package com.presa.rater; /**
  * Write a description of RaterDatabase here.
  * 
  * @author (your name) 
@@ -9,7 +8,6 @@ package com.presa.main;
 import lib.csv.CSVRecord;
 import lib.duke.*;
 import java.util.*;
-import org.apache.commons.csv.*;
 
 public class RaterDatabase {
     private static HashMap<String,Rater> ourRaters;

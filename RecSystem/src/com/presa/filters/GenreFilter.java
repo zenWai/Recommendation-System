@@ -1,4 +1,6 @@
-package com.presa.main;
+package com.presa.filters;
+
+import com.presa.movie.MovieDatabase;
 
 /**
  * @author zenWai

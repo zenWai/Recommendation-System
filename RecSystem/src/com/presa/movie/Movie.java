@@ -1,4 +1,4 @@
-package com.presa.main;
+package com.presa.movie;
 
 /**
  * An immutable passive data object (PDO) to represent item data

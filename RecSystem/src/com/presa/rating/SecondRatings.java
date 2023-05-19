@@ -1,4 +1,7 @@
-package com.presa.main;
+package com.presa.rating;
+
+import com.presa.movie.Movie;
+import com.presa.rater.Rater;
 
 import java.util.*;
 /**

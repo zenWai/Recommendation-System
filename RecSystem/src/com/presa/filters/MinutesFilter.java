@@ -1,4 +1,6 @@
-package com.presa.main;
+package com.presa.filters;
+
+import com.presa.movie.MovieDatabase;
 
 public class MinutesFilter implements Filter {
     private int myMinMinutes;

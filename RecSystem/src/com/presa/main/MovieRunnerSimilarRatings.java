@@ -1,5 +1,11 @@
 package com.presa.main;
 
+import com.presa.filters.*;
+import com.presa.movie.MovieDatabase;
+import com.presa.rater.RaterDatabase;
+import com.presa.rating.FourthRatings;
+import com.presa.rating.Rating;
+
 import java.util.ArrayList;
 
 public class MovieRunnerSimilarRatings {
@@ -12,7 +18,7 @@ public class MovieRunnerSimilarRatings {
     public void printAverageRatings() {
         System.out.println();
 
-        int MINIMALRATERS = 35;
+        int MINIMALRATERS = 30;
         ArrayList<Rating> movieAvgRatings = fourthRatings.getAverageRatings(MINIMALRATERS);
         System.out.println("After filter by " + MINIMALRATERS);
         System.out.println("There are " +
@@ -156,12 +162,12 @@ public class MovieRunnerSimilarRatings {
 
     public static void main(String[] args) {
         MovieRunnerSimilarRatings movieRunnerSRatings = new MovieRunnerSimilarRatings();
-        /*movieRunnerSRatings.printAverageRatings();
-        movieRunnerSRatings.printAverageRatingsByYearAfterAndGenre();*/
+       /* movieRunnerSRatings.printAverageRatings();
+        movieRunnerSRatings.printAverageRatingsByYearAfterAndGenre();
         movieRunnerSRatings.printSimilarRatings();
-        /*movieRunnerSRatings.printSimilarRatingsByGenre();
+        movieRunnerSRatings.printSimilarRatingsByGenre();
         movieRunnerSRatings.printSimilarRatingsByDirector();
-        movieRunnerSRatings.printSimilarRatingsByGenreAndMinutes();
-        movieRunnerSRatings.printSimilarRatingsByYearAfterAndMinutes();*/
+        movieRunnerSRatings.printSimilarRatingsByGenreAndMinutes();*/
+        movieRunnerSRatings.printSimilarRatingsByYearAfterAndMinutes();
     }
 }

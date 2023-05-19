@@ -1,4 +1,4 @@
-package com.presa.main;
+package com.presa.rater;
 
 import java.util.ArrayList;
 

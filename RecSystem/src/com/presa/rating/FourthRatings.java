@@ -1,10 +1,19 @@
-package com.presa.main;
+package com.presa.rating;
+
+import com.presa.filters.Filter;
+import com.presa.filters.TrueFilter;
+import com.presa.movie.MovieDatabase;
+import com.presa.rater.Rater;
+import com.presa.rater.RaterDatabase;
 
 import java.util.*;
 import java.util.stream.Collectors;
 
 import static java.util.stream.Collectors.toCollection;
 
+/**
+ * @author zenWai
+ */
 public class FourthRatings {
     private double getAverageByID(String movieId, int minimalRaters) {
         ArrayList<Rater> myRaters = RaterDatabase.getRaters();
